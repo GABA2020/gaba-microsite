@@ -59,7 +59,7 @@ export const LandingPage = styled.div`
   }
 
   h2 {
-    margin: 25px 0;
+    margin: 30px 30px;
     font-size: 40px;
     font-weight: 600;
     line-height: 1.2;
@@ -85,6 +85,7 @@ export const LandingPage = styled.div`
     line-height: 35px;
     margin: 0 0 20px;
     font-weight: 600;
+    color: #111741;
   }
 `;
 
@@ -96,8 +97,8 @@ export const Header = styled.header`
   left: 0;
   right: 0;
   height: 48px;
-  padding-top: 18px;
-  padding-bottom: 18px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   transition: all 0.2s;
   z-index: 10;
   ${({ atTop, forceBackground }) =>
@@ -125,26 +126,27 @@ export const Nav = styled.nav`
 
   a {
     padding: 6px 20px;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 16px;
     position: relative;
     display: inline-block;
     color: #fff;
     transition: all 0.2s;
+    font-weight: 500;
   }
 `;
 
 export const HeaderNav = styled(Nav)`
-${({ atTop }) => !atTop && "a { color: #111741; }"}
+${({ atTop }) => !atTop && "a { color: #111741; font-weight: 500; }"}
   display: none;
 
   [data-section]:before {
     position: absolute;
     content: '';
-    width: 8px;
+    width: 20px;
     height: 4px;
     background-color: #fff;
-    left: 50%;
+    left: 40%;
     margin-left: -2px;
     bottom: -4px;
     transition: all .3s ease-out 0s;
@@ -224,7 +226,7 @@ export const MenuButton = styled.button`
 
 export const JoinButton = styled.a`
   display: none;
-  padding: 10px 20px;
+  padding: 13px 20px;
   display: flex;
   justify-content: center;
   border-radius: 40px;
@@ -237,7 +239,8 @@ export const JoinButton = styled.a`
   transition-property: transform;
   align-items: center;
   background: #eeaa35;
-  color: #333;
+  color: #111741;
+  font-weight: 500;
 
   :after {
     pointer-events: none;
@@ -489,16 +492,20 @@ export const AboutSection = styled.section`
   }
 
   > p:nth-child(2) {
-    max-width: 500px;
+    max-width: 750px;
     margin: auto;
     color: #337859;
     text-align: center;
     margin-bottom: 60px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
   }
 `;
 
 export const HeroText = styled.p`
-  max-width: 500px;
+  font-size: 20px !important;  
+  max-width: 750px;
   margin: auto;
   color: #337859;
   text-align: center;
@@ -604,7 +611,7 @@ export const Package = styled.div`
   width: 100%;
   background-color: #fff;
   padding-top: 40px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   border-radius: 5px;
@@ -619,7 +626,7 @@ export const Package = styled.div`
   }
 
   li {
-    color: #404040;
+    color: #111741;
     padding: 10px 5px;
     font-size: 16px;
   }
@@ -679,7 +686,7 @@ export const PackageIcon = styled.div`
     background: ${({ variant }) =>
         variant === "midnight"
           ? 'rgba(114, 128, 218, 0.35) url("./icons/speedometer-24px.svg")'
-          : 'rgba(238, 170, 53, 0.25) url("./icons/rocket-24px.svg")'}
+          : 'rgba(238, 170, 53, 0.25) url("./icons/icons8-rocket-20px.svg")'}
       center no-repeat;
     background-size: 50px;
     border-radius: 100px;
@@ -710,6 +717,7 @@ export const Price = styled.span`
   line-height: 1.3em;
   margin: 25px;
   display: block;
+  color: #111741;
 
   em {
     font-size: 32px;
@@ -726,6 +734,7 @@ export const PackageButton = styled.a`
   justify-content: center;
   border-radius: 40px;
   font-size: 14px;
+  font-weight: 500;
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   position: relative;
@@ -798,6 +807,8 @@ export const AccordionContainer = styled.div`
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
   animation-duration: 1500ms;
   animation-name: fadeInUp;
+  border-radius: 6px;
+  color: #111741;
 
   ${({ active }) => active && `background: #c5e6d7;`}
 
@@ -824,6 +835,7 @@ export const AccordionTitle = styled.h4`
 
     :hover {
       background: #c5e6d7;
+      border-radius: 6px;
     }
 }
 `;
@@ -840,6 +852,14 @@ export const Footer = styled.footer`
   text-align: center;
   background: #eeaa35;
 
+  p {
+    color: #111741;
+    max-width: 888px;
+    margin: auto;
+    padding 15px 15px;
+    font-size: 18px;
+  }
+
   hr {
     border: 0;
     height: 2px;
@@ -848,6 +868,11 @@ export const Footer = styled.footer`
 
   a {
     display: inline-block;
+  }
+
+  a:hover {
+    color: #111741;
+    transform: translateY(-5px);
   }
 
   ${widthConstraint}
@@ -859,12 +884,12 @@ export const JourneyBanner = styled.div`
   background-size: cover;
   display: flex;
   align-items: center;
-  color: #fff;
   justify-content: center;
   margin: 0 -5vw 80px;
 
   h1 {
     font-size: 40px;
+    color: #fff;
   }
 `;
 
@@ -878,7 +903,7 @@ export const JourneyText = styled.div`
   @media (min-width: 768px) {
     img {
       float: right;
-      margin: 30px 0 30px 10px;
+      margin: 0 0 30px 15px;
       width: 50%;
     }
   }
@@ -908,6 +933,7 @@ export const TeamMember = styled.div`
     color: #7d7d7d;
     font-size: 18px;
     margin: 0 0 20px 0;
+    font-weight: 500;
   }
 
   h3,
@@ -947,13 +973,13 @@ export const TeamMember = styled.div`
 
   @media (min-width: 576px) {
     flex: 0 0 50%;
-    max-width: calc(50% - 15px);
-    padding-right: 15px;
+    max-width: calc(50% - 30px);
+    padding: 10px 15px 0 15px;
   }
 
   @media (min-width: 992px) {
     flex: 0 0 33.333333%;
-    max-width: calc(33.333333% - 15px);
+    max-width: calc(33.333333% - 30px);
   }
 `;
 
@@ -973,15 +999,17 @@ export const FooterNav = styled(Nav)`
 `;
 
 export const Copyright = styled.p`
-  color: #fff;
-  padding: 20px 0;
+  color: #fff !important;
+  padding: 25px 25px !important;
+  font-size: 14px !important;
 `;
 
 export const SocialLink = styled.a`
   padding: 15px;
 
   img {
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
   }
+
 `;

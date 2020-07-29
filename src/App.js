@@ -44,9 +44,9 @@ function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const navLinks = [
     { id: "home", name: "Home" },
-    { id: "how-it-works", name: "How it Works" },
+    { id: "how-it-works", name: "How It Works" },
     { id: "pricing", name: "Pricing" },
-    { id: "journey", name: "Our Jouney" },
+    { id: "journey", name: "Our Journey" },
     { id: "faq", name: "FAQs" },
   ];
   const [isScrolling, setIsScrolling] = useState(false);
@@ -104,7 +104,7 @@ function App() {
         <Logo
           href="/"
           variant={{ mobile: "midnight", desktop: "mango" }}
-          height={{ mobile: "24px", desktop: "36px" }}
+          height={{ mobile: "24px", desktop: "30px" }}
         />
         <HeaderNav
           menuOpen={menuOpen}
@@ -179,8 +179,7 @@ function App() {
               Congratulations on your acceptance! Get started on the right foot
               by joining our <strong>community of veteran students</strong> who
               have already offered{" "}
-              <strong>reviews of educational resources</strong>reviews of
-              educational resources.
+              <strong>reviews of educational resources</strong>.
             </p>
           </div>
           <div>
@@ -193,9 +192,7 @@ function App() {
             <p>
               You made it through first year! Let’s get you prepared to excel
               this year and perform well on USMLE Step 1 with our{" "}
-              <strong>reviews of educational resources</strong>reviews of
-              educational resources and <strong>career development</strong>
-              career development.
+              <strong>reviews of educational resources</strong> and <strong>career development</strong>.
             </p>
           </div>
           <div>
@@ -209,14 +206,12 @@ function App() {
             <p>
               “I wanted a way to keep those anecdotes or stories, for example
               patient encounters that were particularly impactful and that might
-              be helpful in my personal statement” – Benjamin. MS3*
+              be helpful in my personal statement” – Benjamin, MS3*
             </p>
             <p>
-              Can you see the finish line? We can! Finish strong through STEP 2
-              with our <strong>reviews of educational resources</strong>reviews
-              of educational resources, get started building your ERAS early
-              with your <strong>personalized GABA profile</strong>personalized
-              GABA profile, and plan your rotations with{" "}
+              Can you see the finish line? We can! Finish strong through Step 2
+              with our <strong>reviews of educational resources</strong>, get started building your ERAS early
+              with your <strong>personalized GABA profile</strong>, and plan your rotations with{" "}
               <strong>program reviews</strong>.
             </p>
           </div>
@@ -233,8 +228,7 @@ function App() {
               Can you believe that you’re going to be a doctor in one year!?
               Start building your ERAS early with your{" "}
               <strong>personalized GABA profile</strong>. Plan for residency
-              with our <strong>database of applicant data</strong>database of
-              applicant data and <strong>program reviews</strong>.
+              with our <strong>applicant database</strong> and <strong>program reviews</strong>.
             </p>
           </div>
           <div>
@@ -251,7 +245,7 @@ function App() {
         <VideoModal videoOpen={videoOpen}>
           <ModalClose show={videoOpen} onClick={() => setVideoOpen(false)} />
           <iframe
-            title="How it Works Video"
+            title="How It Works Video"
             width="560"
             height="315"
             src="https://www.youtube.com/embed/YbFtpUooQfs"
@@ -271,7 +265,7 @@ function App() {
               <Price>
                 $ <em>25</em> per month
               </Price>
-              <Price>Billed Anually</Price>
+              <Price>Billed Annually</Price>
             </PackageHeader>
             <hr />
             <PackageButton
@@ -401,6 +395,7 @@ function App() {
           </p>
         </Accordion>
       </section>
+
       <section id="journey">
         <JourneyBanner>
           <h1>Our Journey</h1>
@@ -427,6 +422,10 @@ function App() {
               </p>
             </div>
           </JourneyText>
+          </div>
+        </section>
+
+        <section id="journey">
           <div>
             <h2>Meet the Team</h2>
             <HeroText>
@@ -482,7 +481,7 @@ function App() {
                   <img src="./icons/linkedin.svg" alt="" />
                 </a>
                 <h3>Sam Ashlee, PhD</h3>
-                <p>Director Of Corporate Outreach</p>
+                <p>Director of Corporate Outreach</p>
               </TeamMember>
               <TeamMember>
                 <img src="./images/team/jacq.jpg" alt="" />
@@ -498,13 +497,13 @@ function App() {
                 >
                   <img src="./icons/github.svg" alt="" />
                 </a>
-                <h3>Sam Ashlee, PhD</h3>
-                <p>Director Of Corporate Outreach</p>
+                <h3>Luke Nguyen</h3>
+                <p>Full Stack Developer</p>
               </TeamMember>
             </Team>
           </div>
-        </div>
-      </section>
+        </section>
+
       <Footer>
         <Logo
           href="/"
@@ -540,14 +539,14 @@ function App() {
             rel="noopener noreferrer"
             href="https://linkedin.com/company/gogabaco/"
           >
-            <img src="./icons/linkedin.svg" width="14px" alt="" />
+            <img src="./icons/linkedin.svg" width="14px" alt="LinkedIn Icon" />
           </SocialLink>
           <SocialLink
             target="_blank"
             rel="noopener noreferrer"
             href="https://twitter.com/goGABAco"
           >
-            <img src="./icons/twitter.svg" width="14px" alt="" />
+            <img src="./icons/twitter.svg" width="14px" alt="Twitter Icon" />
           </SocialLink>
         </div>
       </Footer>
