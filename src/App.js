@@ -38,6 +38,7 @@ import {
   SocialLink,
 } from "./App.styles.js";
 import Typed from "typed.js";
+import PaypalButtons from "./Components/PaypalButtons.js";
 
 function App() {
   const [currentSection, setCurrentSection] = useState("home");
@@ -96,6 +97,9 @@ function App() {
   }, []);
 
   return (
+    <>
+    <PaypalButtons/>
+    
     <LandingPage id="home" currentSection={currentSection}>
       <Header
         atTop={!isScrolling}
@@ -551,6 +555,7 @@ function App() {
         </div>
       </Footer>
     </LandingPage>
+    </>
   );
 }
 

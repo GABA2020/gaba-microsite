@@ -1,59 +1,61 @@
 <!DOCTYPE html>
 <html lang="en" style="scroll-behavior: smooth;">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <title>GABA | Students to Resources</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&amp;display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      @keyframes pageAnimation {
-        0% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 1;
-        }
-      }
-      @keyframes fadeOut {
-        0% {
-          opacity: 1;
-        }
-        100% {
-          opacity: 0;
-        }
-      }
-      @keyframes fadeInUp {
-        from {
-          opacity: 0;
-          -webkit-transform: translate3d(0, 100%, 0);
-          transform: translate3d(0, 100%, 0);
-        }
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!-- Optimal Internet Explorer compatibility -->
+        <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+        <title>GABA | Students to Resources</title>
+        <link
+            href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&amp;display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            @keyframes pageAnimation {
+                0% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+            @keyframes fadeOut {
+                0% {
+                    opacity: 1;
+                }
+                100% {
+                    opacity: 0;
+                }
+            }
+            @keyframes fadeInUp {
+                from {
+                    opacity: 0;
+                    -webkit-transform: translate3d(0, 100%, 0);
+                    transform: translate3d(0, 100%, 0);
+                }
 
-        to {
-          opacity: 1;
-          -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-        }
-      }
+                to {
+                    opacity: 1;
+                    -webkit-transform: translate3d(0, 0, 0);
+                    transform: translate3d(0, 0, 0);
+                }
+            }
 
-      html {
-        scroll-behavior: smooth;
-      }
-      body {
-        animation: pageAnimation ease 2s;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
-      }
-    </style>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-  </body>
+            html {
+                scroll-behavior: smooth;
+            }
+            body {
+                animation: pageAnimation ease 2s;
+                animation-iteration-count: 1;
+                animation-fill-mode: forwards;
+            }
+        </style>
+    </head>
+    <body>
+        <noscript>You need to enable JavaScript to run this app.</noscript>
+        <div id="root"></div>
+    </body>
 </html>
