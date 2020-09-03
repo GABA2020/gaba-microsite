@@ -57,5 +57,15 @@
     <body>
         <noscript>You need to enable JavaScript to run this app.</noscript>
         <div id="root"></div>
+
+        <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+        <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+        <script src="/__/firebase/7.19.1/firebase-app.js"></script>
+
+        <!-- Add Firebase products that you want to use -->
+        <script src="/__/firebase/7.19.1/firebase-analytics.js"></script>
+
+        <!-- Load the Firebase SDKs before loading this file -->
+        <script src="/__/firebase/init.js"></script>
     </body>
 </html>
