@@ -38,11 +38,6 @@ import {
     SocialLink,
 } from "./App.styles.js";
 import Typed from "typed.js";
-import { Elements } from "@stripe/react-stripe-js";
-import { loadStripe } from "@stripe/stripe-js";
-import CheckoutForm from "./Components/CheckoutForm.js";
-
-const stripePromise = loadStripe("pk_test_51HJAVwAR6Zl0WfNDjMxkYeZcYFSyhiLzdRHv80GaUi00FE3ToUmpgA65xFhi7gFbtsgYE30ctGx7AmH4YY7tUugU00CdTfsMQD");
 
 function App() {
     const [currentSection, setCurrentSection] = useState("home");
@@ -105,11 +100,8 @@ function App() {
 
     return (
         <>
-            <Elements stripe={stripePromise}>
-                <CheckoutForm />
-            </Elements>
-
             <LandingPage id="home" currentSection={currentSection}>
+              
                 <Header
                     atTop={!isScrolling}
                     forceBackground={currentSection === "journey"}
@@ -307,7 +299,7 @@ function App() {
                                 <PackageIcon variant="midnight" />
                                 <h3>Pre-Med</h3>
                                 <Price>
-                                    $ <em>25</em> per month
+                                    $ <em>30</em> per month
                                 </Price>
                                 <Price>Billed Annually</Price>
                             </PackageHeader>
@@ -336,9 +328,9 @@ function App() {
                                 <PackageIcon />
                                 <h3>Bronze</h3>
                                 <Price>
-                                    <em>Free</em>
+                                    $ <em>9</em> per month
                                 </Price>
-                                <Price>Forever</Price>
+                                <Price>Billed Annually</Price>
                             </PackageHeader>
                             <hr />
                             <PackageButton
@@ -362,7 +354,7 @@ function App() {
                                 <PackageIcon />
                                 <h3>Silver</h3>
                                 <Price>
-                                    $ <em>15</em> per month
+                                    $ <em>20</em> per month
                                 </Price>
                                 <Price>Billed Annually</Price>
                             </PackageHeader>
@@ -391,7 +383,7 @@ function App() {
                                 <PackageIcon />
                                 <h3>Gold</h3>
                                 <Price>
-                                    $ <em>25</em> per month
+                                    $ <em>35</em> per month
                                 </Price>
                                 <Price>Billed Annually</Price>
                             </PackageHeader>
