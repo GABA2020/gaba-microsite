@@ -101,7 +101,6 @@ function App() {
     return (
         <>
             <LandingPage id="home" currentSection={currentSection}>
-              
                 <Header
                     atTop={!isScrolling}
                     forceBackground={currentSection === "journey"}
@@ -374,7 +373,7 @@ function App() {
                                 <li>Digital Portfolio</li>
                                 <li>CV / Resume Generator</li>
                                 <li>Learning Assessments</li>
-                                <li>Residency Applicant Databasek</li>
+                                <li>Residency Applicant Database</li>
                                 <li>Rotation / Residency Reviews</li>
                             </ul>
                         </Package>
@@ -403,7 +402,7 @@ function App() {
                                 <li>Digital Portfolio</li>
                                 <li>CV / Resume Generator</li>
                                 <li>Learning Assessments</li>
-                                <li>Residency Applicant Databasek</li>
+                                <li>Residency Applicant Database</li>
                                 <li>Rotation / Residency Reviews</li>
                                 <li>One on One Coaching</li>
                             </ul>
