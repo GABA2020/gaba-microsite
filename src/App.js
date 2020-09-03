@@ -305,12 +305,12 @@ function App() {
                             </PackageHeader>
                             <hr />
                             <PackageButton
-                                href="https://share.hsforms.com/16SOCx9XrSpeQHLmvRwkQhA4olac"
+                                href="http://gogaba.rurl.me/Join"
                                 target="_blank"
                             >
-                                Contact Us &nbsp;
+                                Join GABA&nbsp;
                                 <img
-                                    src="./icons/mail_outline-24px.svg"
+                                    src="./icons/arrow_forward-24px.svg"
                                     width="14px"
                                     alt=""
                                 />
@@ -360,12 +360,12 @@ function App() {
                             </PackageHeader>
                             <hr />
                             <PackageButton
-                                href="https://share.hsforms.com/16SOCx9XrSpeQHLmvRwkQhA4olac"
+                                href="http://gogaba.rurl.me/Join"
                                 target="_blank"
                             >
-                                Contact Us &nbsp;
+                                Join GABA&nbsp;
                                 <img
-                                    src="./icons/mail_outline-24px.svg"
+                                    src="./icons/arrow_forward-24px.svg"
                                     width="14px"
                                     alt=""
                                 />
